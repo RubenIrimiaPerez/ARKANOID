@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ActivePW : MonoBehaviour
+public class ActivePD : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -11,14 +11,14 @@ public class ActivePW : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Obtener el componente ObjectSpawner en la escena
-            Spawner objectSpawner = FindObjectOfType<Spawner>();
+            Spawner2 objectSpawner = FindObjectOfType<Spawner2>();
 
             // Verificar si se encontró un ObjectSpawner en la escena
             if (objectSpawner != null)
             {
-                // Activar el power-up llamando al mét
-                // Activar el power-up llamando al mét
-                objectSpawner.ActivatePowerUp3();
+                // Activar el power-down llamando al método
+
+                objectSpawner.ActivatePowerDown();
             }
 
             // Destruir el power-up después de ser activado

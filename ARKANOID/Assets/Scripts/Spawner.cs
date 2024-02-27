@@ -10,7 +10,6 @@ public class Spawner : MonoBehaviour
     public GameObject powerUpPrefab;
 
 
-
     // Variable para asegurarse de que el power-up se genere solo una vez
     private bool hasSpawned = false;
 
@@ -18,7 +17,21 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         // Se invoca la función SpawnPowerUp() después de 7 segundos
-        Invoke("SpawnPowerUp", 7f);
+
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            Invoke("SpawnPowerUp", 15f);
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            Invoke("SpawnPowerUp", 10f);
+        }
+        else
+        {
+            Invoke("SpawnPowerUp", 5f);
+
+        }
+
     }
 
     // Método para generar el power-up
@@ -52,11 +65,12 @@ public class Spawner : MonoBehaviour
                 Destroy(block);
 
             }
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
 
         }
         else if (SceneManager.GetActiveScene().buildIndex == 0)
         {
+
             GameObject ball = GameObject.FindGameObjectWithTag("Player");
 
             if (ball != null)
@@ -84,6 +98,5 @@ public class Spawner : MonoBehaviour
             }
         }
     }
-
 
 }

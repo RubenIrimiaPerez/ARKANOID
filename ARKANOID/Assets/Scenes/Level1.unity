@@ -194,6 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpPrefab: {fileID: 494207674547676620, guid: 68d2a98a9146bce4ead88750517e8dfc, type: 3}
+  powerDownPrefab: {fileID: 8672896344832446320, guid: abac1d6724b222f4488b9b49f85d8e34, type: 3}
 --- !u!4 &543893005
 Transform:
   m_ObjectHideFlags: 0
