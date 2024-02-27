@@ -16,13 +16,16 @@ public class ActivePW : MonoBehaviour
             // Verificar si se encontró un ObjectSpawner en la escena
             if (objectSpawner != null)
             {
-                // Activar el power-up llamando al mét
-                // Activar el power-up llamando al mét
+                // Activar el power-up llamando al método
                 objectSpawner.ActivatePowerUp3();
             }
 
             // Destruir el power-up después de ser activado
             Destroy(gameObject);
+        }else if (other.CompareTag("Suelo"))
+        {
+            Destroy(gameObject);
+
         }
     }
 }

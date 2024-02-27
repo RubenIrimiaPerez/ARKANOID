@@ -24,6 +24,11 @@ public class ActivePD : MonoBehaviour
             // Destruir el power-up después de ser activado
             Destroy(gameObject);
         }
+        else if (other.CompareTag("Suelo"))
+        {
+            Destroy(gameObject);
+
+        }
     }
 }
 

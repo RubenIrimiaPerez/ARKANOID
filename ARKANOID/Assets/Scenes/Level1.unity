@@ -194,7 +194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpPrefab: {fileID: 494207674547676620, guid: 68d2a98a9146bce4ead88750517e8dfc, type: 3}
-  powerDownPrefab: {fileID: 8672896344832446320, guid: abac1d6724b222f4488b9b49f85d8e34, type: 3}
 --- !u!4 &543893005
 Transform:
   m_ObjectHideFlags: 0
@@ -467,8 +466,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d11c2c5db407d804e9d19b265a9651d3, type: 2}
+  m_sharedMaterial: {fileID: 6401256176610518867, guid: d11c2c5db407d804e9d19b265a9651d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -587,8 +586,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d11c2c5db407d804e9d19b265a9651d3, type: 2}
+  m_sharedMaterial: {fileID: 6401256176610518867, guid: d11c2c5db407d804e9d19b265a9651d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -884,7 +883,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block-Violet
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1523050285389186775, guid: 122677ba20c2c5b43bf08cc2a84837c5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -945,7 +945,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9207869212075034358, guid: c3d8e140f04f70d4889d29e24c8c0c55, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1006,7 +1007,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block-Pink
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3599632710687674389, guid: 1a8c3bf7d66ad6b4bbd323518cffc67d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1223,7 +1225,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block-Green
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5328296733655498191, guid: 62874b9429653ee4dafeb1ef826bae52, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1406,7 +1409,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9152115670763870640, guid: 85cb415250f9d5f40b3e80cfee527fd4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

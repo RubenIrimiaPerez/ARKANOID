@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2308773102656166297}
   - component: {fileID: 5480773666578461571}
   - component: {fileID: 8208820864034124635}
-  - component: {fileID: 1523050285389186775}
+  - component: {fileID: 4284007606338764814}
   m_Layer: 0
   m_Name: Block-Violet
   m_TagString: Block
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &1523050285389186775
+--- !u!114 &4284007606338764814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

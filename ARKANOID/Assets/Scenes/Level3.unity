@@ -1038,6 +1038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3964435663067665347, guid: 8cc79de689b6932418bb585bc55298a7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4653403299577507253, guid: 8cc79de689b6932418bb585bc55298a7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1343,6 +1347,10 @@ PrefabInstance:
     - target: {fileID: 9052966016900423658, guid: 36606af07ff8bb943bcbd55c9145a158, type: 3}
       propertyPath: m_Name
       value: Loser
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052966016900423658, guid: 36606af07ff8bb943bcbd55c9145a158, type: 3}
+      propertyPath: m_TagString
+      value: Suelo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
