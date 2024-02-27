@@ -20,12 +20,31 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       #if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
 
         //lanzar la bola con el espacio ,mientras se este quieto
-        if(Input.GetKeyDown(KeyCode.Space) && !isBallMoving)
+        if (Input.GetKeyDown(KeyCode.Space) && !isBallMoving)
         {
             Launch();
         }
+
+#elif UNITY_ANDROID
+
+        //Verificar si se ha tocado la pantalla (para dispositivos móviles)
+
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began && !isBallMoving)
+            {
+                Launch();
+            }
+        }
+
+
+#endif
+
 
     }
 

@@ -42,10 +42,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void LoadNextLevel()
+    public void LoadNextLevel()
 
     {
-        
         // coge el indice de la escena en la que estas y le suma 1 . ejem( si estas en nivel 1 pues pasa al 2)
         SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex)+1);
     }

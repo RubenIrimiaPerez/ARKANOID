@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6328397639255323625}
   - component: {fileID: 1507869738493542597}
   - component: {fileID: 7176727585248213235}
+  - component: {fileID: 3599632710687674389}
   m_Layer: 0
   m_Name: Block-Pink
   m_TagString: Block
@@ -130,3 +131,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &3599632710687674389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9215758334279942211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b94830f4526e6459c4866f81ee7626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
