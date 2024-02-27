@@ -50,31 +50,23 @@ public class Spawner : MonoBehaviour
             foreach (GameObject block in blocks)
             {
                 Destroy(block);
-                SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex) + 1);
+
             }
+            SceneManager.LoadScene(0);
 
-
-        }else if (SceneManager.GetActiveScene().buildIndex == 0)
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            Boolean hay = true;
-            GameObject block = GameObject.FindGameObjectWithTag("Block");
-            Destroy(block);
-            int blocksLeft = GameObject.FindGameObjectsWithTag("Block").Length;
+            GameObject ball = GameObject.FindGameObjectWithTag("Player");
 
-            do
+            if (ball != null)
             {
-                blocksLeft = GameObject.FindGameObjectsWithTag("Block").Length;
+                // Obtener el Rigidbody2D de la bola
+                Rigidbody2D ballRb = ball.GetComponent<Rigidbody2D>();
 
-                if (blocksLeft <= 0)
-                {
-                    SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex) + 1);
-                    hay = false;
-                }
-
-            } while (hay == true);
-
-
-
+                // Aumentar la velocidad actual multiplicando por el multiplicador
+                ballRb.velocity *= 1.1f;
+            }
 
         }
         else
@@ -88,7 +80,7 @@ public class Spawner : MonoBehaviour
                 Rigidbody2D ballRb = ball.GetComponent<Rigidbody2D>();
 
                 // Aumentar la velocidad actual multiplicando por el multiplicador
-                ballRb.velocity *= 1.1f;
+                ballRb.velocity *= 1.2f;
             }
         }
     }

@@ -28,6 +28,7 @@ public class Score : MonoBehaviour
 
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
+            PlayerPrefs.SetInt("HighScore", 0);
             _currentScoreTxt.text = _score.ToString();
 
             _highScoreTxt.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
