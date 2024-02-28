@@ -1164,6 +1164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Loser
       objectReference: {fileID: 0}
+    - target: {fileID: 9052966016900423658, guid: 36606af07ff8bb943bcbd55c9145a158, type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
